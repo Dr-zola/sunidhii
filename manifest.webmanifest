@@ -1,0 +1,16 @@
+{
+  "name": "For Sunidhi | A Royal Message",
+  "short_name": "For Sunidhi",
+  "start_url": "./",
+  "display": "fullscreen",
+  "background_color": "#efe5fb",
+  "theme_color": "#efe5fb",
+  "icons": [
+    {
+      "src": "app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

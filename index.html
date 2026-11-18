@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="For Sunidhi">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>For Sunidhi | A Royal Message</title>
+  <meta name="theme-color" content="#efe5fb">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="frame" aria-label="Princess Day surprise">
+    <section class="screen active" id="notification">
+      <div class="phone">
+        <div class="phone-status">
+          <strong id="clock">7:20</strong>
+          <span>Happy Princess Day</span>
+        </div>
+        <div class="notice-stack">
+          <button class="notice royal-notice" id="open-notification" type="button">
+            <span class="notice-icon">👑</span>
+            <div><small>Now</small><b>Shadab</b><p>has a royal message for you 💜</p></div>
+          </button>
+          <article class="notice delivery-notice">
+            <span class="notice-icon">📦</span>
+            <div><small>Delivery · 2m</small><b>Your package</b><p>Out for delivery, arriving today</p></div>
+          </article>
+          <article class="notice hydration-notice">
+            <span class="notice-icon">💧</span>
+            <div><small>Reminder · 6m</small><b>Hydration check</b><p>Drink some water, you forgot again</p></div>
+          </article>
+          <p class="tap-note">Tap the glowing one</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen center-screen" id="envelope">
+      <p class="eyebrow">A little surprise, just for you</p>
+      <p class="title">A Royal Something</p>
+      <button class="envelope" id="open-envelope" type="button" aria-label="Open the royal envelope">
+        <img class="photo-placeholder" src="WhatsApp%20Image%202026-11-18%20at%2012.43.17%20PM.jpeg" alt="Sunidhi">
+        <span class="envelope-name">Sunidhi <span>♥</span></span>
+        <span class="envelope-flap"></span>
+        <span class="wax">♥</span>
+      </button>
+      <p class="hint" id="envelope-hint">Tap the little seal to open your note</p>
+      <p class="envelope-from">With love, Shadab</p>
+    </section>
+
+    <section class="screen center-screen" id="question">
+      <div class="question-deco">👑</div>
+      <h1>Will you be my princess forever?<br><span>Sunidhi</span> 👑</h1>
+      <p class="from">From: Shadab 💌</p>
+      <div class="answer-row">
+        <button class="yes" id="yes-button" type="button">Yes 👑</button>
+        <button class="no" id="no-button" type="button">No 😏</button>
+      </div>
+      <p class="toast" id="toast">Come on, just say yes na 🥺</p>
+    </section>
+
+    <section class="screen center-screen celebration" id="celebration">
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <h1>Yay! Her Majesty said YES! 👑</h1>
+      <p class="celebration-text">Long live the princess, Sunidhi! 💜</p>
+      <div class="celebration-art" aria-hidden="true">
+        <span>👑</span>
+      </div>
+      <button class="primary" id="continue-letter" type="button">Continue →</button>
+    </section>
+
+    <section class="screen letter-screen" id="letter">
+      <div class="letter-photo">
+        <img src="WhatsApp%20Image%202026-11-18%20at%2012.43.18%20PM%20(1).jpeg" alt="Sunidhi">
+      </div>
+      <article class="letter-copy">
+        <p class="dear">Dear <strong>Sunidhi</strong>,</p>
+        <span class="gold-rule"></span>
+        <div class="typed-letter" id="typed-letter"></div>
+        <p class="signature">— Shadab</p>
+        <div class="screen-actions">
+          <button class="secondary" type="button" data-back="celebration">← Back</button>
+          <button class="primary small" type="button" data-next="certificate">Next</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="screen center-screen certificate-screen" id="certificate">
+      <div class="certificate">
+        <div class="certificate-medallion" aria-hidden="true"><span>👑</span></div>
+        <small>Royal Decree</small>
+        <h2>Certificate of<br>Princess-hood</h2>
+        <span class="certificate-rule" aria-hidden="true"><i></i><b>✦</b><i></i></span>
+        <p>This is to certify that</p>
+        <strong class="certificate-name">Sunidhi</strong>
+        <p>said <b>YES</b> to Shadab's question:</p>
+        <em>"Will you be my princess forever?"</em>
+        <p class="certificate-blessing">and is hereby crowned Princess,<br>officially, forever.</p>
+        <div class="certificate-footer">
+          <span class="certificate-date">November 18, 2026</span>
+          <span class="certificate-signature"><small>With love,</small><b>Shadab</b></span>
+        </div>
+      </div>
+      <div class="screen-actions">
+        <button class="secondary" type="button" data-back="letter">← Back</button>
+        <button class="primary small" type="button" id="download-certificate">Download 📜</button>
+        <button class="primary small" type="button" data-next="gallery">Next</button>
+      </div>
+    </section>
+
+    <section class="screen gallery-screen" id="gallery">
+      <p class="gallery-title">A kingdom of little moments</p>
+      <p class="gallery-subtitle">pinned, just for her</p>
+      <div class="photo-board">
+        <figure class="polaroid tilt-one">
+          <img class="portrait portrait-one" src="WhatsApp%20Image%202026-11-18%20at%2012.43.18%20PM.jpeg" alt="Sunidhi">
+          <figcaption>My Favourite Person</figcaption>
+        </figure>
+        <div class="bouquet-card" aria-label="A bouquet for Sunidhi">
+          <div class="bouquet">🌸🌹🌷<br>🌹🌸🌹</div>
+          <span>For My Princess</span>
+        </div>
+        <figure class="polaroid tilt-two small-polaroid">
+          <img class="portrait portrait-two" src="WhatsApp%20Image%202026-11-18%20at%2012.43.18%20PM%20(1).jpeg" alt="Sunidhi">
+          <figcaption>My Happiness</figcaption>
+        </figure>
+        <div class="royalty-card">
+          <h3>Why You’re Royalty</h3>
+          <p>👑 You carry yourself with grace</p>
+          <p>👑 You lift everyone around you</p>
+          <p>👑 You’re strong when it counts</p>
+          <p>👑 You make my world a fairytale</p>
+        </div>
+      </div>
+      <blockquote>Some people are born to wear crowns — you just wear yours with a smile.</blockquote>
+      <div class="gallery-bottom">
+        <figure class="polaroid tilt-three bottom-photo">
+          <img class="portrait portrait-three" src="WhatsApp%20Image%202026-11-18%20at%2012.43.17%20PM.jpeg" alt="Sunidhi">
+          <figcaption>You — Me</figcaption>
+        </figure>
+        <div class="with-you-card">
+          <h3>With You</h3>
+          <p>👑 I laugh a little louder</p>
+          <p>👑 I worry a little less</p>
+          <p>👑 I smile a lot more</p>
+          <p>👑 I love a little deeper</p>
+        </div>
+      </div>
+      <p class="made-with">Made by <strong>Shadab</strong> with love ❤️</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
